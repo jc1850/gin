@@ -80,7 +80,7 @@ public class InsertContinueWithIf extends InsertStatementEdit {
                                                 Operator.GREATER_EQUALS,
                                                 Operator.GREATER,
                                         }[rng.nextInt(5)];
-                        condition = new BinaryExpr(new NameExpr(v.getName()), new IntegerLiteralExpr(0), operator);
+                        condition = new BinaryExpr(new NameExpr(v.getName()), new IntegerLiteralExpr(rng.nextInt(5)), operator);
                 }
                 
                 IfStmt ifs = new IfStmt();
